@@ -1,4 +1,6 @@
 services:
-  runner:
-    build: .
-    restart: unless-stopped
+    runner:
+        build: .
+        restart: unless-stopped
+        volumes:
+            - ./result:/app/result
