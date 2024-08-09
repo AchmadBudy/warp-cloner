@@ -1,6 +1,7 @@
 services:
     runner:
         build: .
-        restart: unless-stopped
+        restart: always
         volumes:
             - ./result:/app/result
+            - .env:/app/.env
